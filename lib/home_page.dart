@@ -33,10 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   height: 46,
                   width: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(30),
-                  ),
+                  color: Colors.red,
                   child: TextButton(
                     onPressed: () {
                       context.locale = const Locale('en', 'US');
@@ -50,30 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   height: 46,
                   width: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: TextButton(
-                    onPressed: () {
-                      context.locale = const Locale('ja', 'JA');
-                    },
-                    child: Text(
-                        "Japanese",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                  ),
-                ),
-                
-
-
-                Container(
-                  height: 46,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(30),
-                  ),
+                  color: Colors.blue,
                   child: TextButton(
                     onPressed: () {
                       context.locale = const Locale('ko', 'KO');
@@ -82,6 +56,20 @@ class _MyHomePageState extends State<MyHomePage> {
                       "Korean",
                       style: TextStyle(color: Colors.white),
                     ),
+                  ),
+                ),
+                Container(
+                  height: 46,
+                  width: 100,
+                  color: Colors.green,
+                  child: TextButton(
+                    onPressed: () {
+                      context.locale = const Locale('ja', 'JA');
+                    },
+                    child: Text(
+                        "Japanese",
+                        style: TextStyle(color: Colors.white),
+                      ),
                   ),
                 ),
               ],
